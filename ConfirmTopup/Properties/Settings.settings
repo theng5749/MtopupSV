@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ConfirmTopup.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="ConfirmTopup_ltcsrv_LTCService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.30.6.95:6848/LTCService.asmx</Value>
+    </Setting>
+    <Setting Name="ConfirmTopup_sms_SMS" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.30.6.95:5672/smservice.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

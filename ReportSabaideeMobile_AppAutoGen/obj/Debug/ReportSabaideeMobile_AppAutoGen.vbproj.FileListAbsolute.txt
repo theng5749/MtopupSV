@@ -1,0 +1,11 @@
+D:\LTC\api\Mtopup\ReportSabaideeMobile_AppAutoGen\bin\Debug\ReportSabaideeMobile_AppAutoGen.exe.config
+D:\LTC\api\Mtopup\ReportSabaideeMobile_AppAutoGen\bin\Debug\ReportSabaideeMobile_AppAutoGen.exe
+D:\LTC\api\Mtopup\ReportSabaideeMobile_AppAutoGen\bin\Debug\ReportSabaideeMobile_AppAutoGen.pdb
+D:\LTC\api\Mtopup\ReportSabaideeMobile_AppAutoGen\bin\Debug\ReportSabaideeMobile_AppAutoGen.xml
+D:\LTC\api\Mtopup\ReportSabaideeMobile_AppAutoGen\obj\Debug\ReportSabaideeMobile_AppAutoGen.Resources.resources
+D:\LTC\api\Mtopup\ReportSabaideeMobile_AppAutoGen\obj\Debug\ReportSabaideeMobile_AppAutoGen.vbproj.GenerateResource.cache
+D:\LTC\api\Mtopup\ReportSabaideeMobile_AppAutoGen\obj\Debug\ReportSabaideeMobile_AppAutoGen.vbproj.CoreCompileInputs.cache
+D:\LTC\api\Mtopup\ReportSabaideeMobile_AppAutoGen\obj\Debug\ReportSabaideeMobile_AppAutoGen.exe
+D:\LTC\api\Mtopup\ReportSabaideeMobile_AppAutoGen\obj\Debug\ReportSabaideeMobile_AppAutoGen.xml
+D:\LTC\api\Mtopup\ReportSabaideeMobile_AppAutoGen\obj\Debug\ReportSabaideeMobile_AppAutoGen.pdb
+D:\LTC\api\Mtopup\ReportSabaideeMobile_AppAutoGen\obj\Debug\ReportSabaideeMobile_AppAutoGen.vbprojAssemblyReference.cache

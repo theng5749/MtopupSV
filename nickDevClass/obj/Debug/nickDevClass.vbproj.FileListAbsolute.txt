@@ -1,0 +1,12 @@
+D:\LTC\api\Mtopup\nickDevClass\obj\Debug\nickDevClass.Resources.resources
+D:\LTC\api\Mtopup\nickDevClass\obj\Debug\nickDevClass.vbproj.GenerateResource.cache
+D:\LTC\api\Mtopup\nickDevClass\obj\Debug\nickDevClass.vbproj.CoreCompileInputs.cache
+D:\LTC\api\Mtopup\nickDevClass\bin\Debug\nickDevClass.dll
+D:\LTC\api\Mtopup\nickDevClass\bin\Debug\nickDevClass.pdb
+D:\LTC\api\Mtopup\nickDevClass\bin\Debug\nickDevClass.xml
+D:\LTC\api\Mtopup\nickDevClass\bin\Debug\Oracle.ManagedDataAccess.dll
+D:\LTC\api\Mtopup\nickDevClass\obj\Debug\nickDevClass.vbproj.CopyComplete
+D:\LTC\api\Mtopup\nickDevClass\obj\Debug\nickDevClass.dll
+D:\LTC\api\Mtopup\nickDevClass\obj\Debug\nickDevClass.xml
+D:\LTC\api\Mtopup\nickDevClass\obj\Debug\nickDevClass.pdb
+D:\LTC\api\Mtopup\nickDevClass\obj\Debug\nickDevClass.vbprojAssemblyReference.cache

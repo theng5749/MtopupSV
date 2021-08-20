@@ -1,0 +1,1592 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.laotel.com" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://www.laotel.com" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.laotel.com">
+      <s:element name="CheckOnlineWifi_Json">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="params" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckOnlineWifi_JsonResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CheckOnlineWifi_JsonResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPasswordWifi_Json">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="params" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPasswordWifi_JsonResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetPasswordWifi_JsonResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryPackageWifi_Json">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="params" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryPackageWifi_JsonResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="QueryPackageWifi_JsonResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CallWebService">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="cmd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="params" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CallWebServiceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CallWebServiceResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SubmitSMS">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="NameAPP" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Header" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Msisdn" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Msg" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UserID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SubmitSMSResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SubmitSMSResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SelectLog">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="params" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SelectLogResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SelectLogResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RequestProductByID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="product_type" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RequestProductByIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RequestProductByIDResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="HSPA">
+        <s:complexType />
+      </s:element>
+      <s:element name="HSPAResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HSPAResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PreP">
+        <s:complexType />
+      </s:element>
+      <s:element name="PrePResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PrePResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PostP">
+        <s:complexType />
+      </s:element>
+      <s:element name="PostPResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PostPResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckNetwrokType_Json">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="params" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckNetwrokType_JsonResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CheckNetwrokType_JsonResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckBalancePostPaid_Json">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="params" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckBalancePostPaid_JsonResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CheckBalancePostPaid_JsonResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RefillCard_PostPaid_Json">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="params" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RefillCard_PostPaid_JsonResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RefillCard_PostPaid_JsonResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RefillCard_PSTN_Json">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="params" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RefillCard_PSTN_JsonResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RefillCard_PSTN_JsonResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckPoint_Json">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="params" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckPoint_JsonResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CheckPoint_JsonResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckBalancePrePaid_Json">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="params" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckBalancePrePaid_JsonResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CheckBalancePrePaid_JsonResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckDataServicePrePaid_Json">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="params" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckDataServicePrePaid_JsonResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CheckDataServicePrePaid_JsonResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckPackageData_Json">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="params" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckPackageData_JsonResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CheckPackageData_JsonResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckPackageDataHSPA_Json">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="params" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckPackageDataHSPA_JsonResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CheckPackageDataHSPA_JsonResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RefillCard_PrePaid_Json">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="params" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RefillCard_PrePaid_JsonResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RefillCard_PrePaid_JsonResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCustomerInfo_Json">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="params" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCustomerInfo_JsonResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCustomerInfo_JsonResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SubmitSMS_cmd_Json">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="params" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SubmitSMS_cmd_JsonResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SubmitSMS_cmd_JsonResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetPackagePrePaid_Json">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="params" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetPackagePrePaid_JsonResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SetPackagePrePaid_JsonResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Register_Json">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="params" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Register_JsonResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Register_JsonResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckUserAndPassword_Json">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Params" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckUserAndPassword_JsonResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CheckUserAndPassword_JsonResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ChangePasswordUserName_Json">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="params" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ChangePasswordUserName_JsonResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ChangePasswordUserName_JsonResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RequestProductByID_Json">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="product_type" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RequestProductByID_JsonResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RequestProductByID_JsonResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SelectLog_json">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="params" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SelectLog_jsonResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SelectLog_jsonResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TranferBalanceOCS_Json">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="params" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TranferBalanceOCS_JsonResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TranferBalanceOCS_JsonResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckBalancePSTN_Json">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="params" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckBalancePSTN_JsonResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CheckBalancePSTN_JsonResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AuthenMBill_Json">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="param" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AuthenMBill_JsonResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AuthenMBill_JsonResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RequestListNumber">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Email" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RequestListNumberResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RequestListNumberResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RegisterMBill_Json">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="params" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RegisterMBill_JsonResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RegisterMBill_JsonResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RegisterWifi_Json">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="params" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RegisterWifi_JsonResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RegisterWifi_JsonResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BuyPackageWifi_Json">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="params" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BuyPackageWifi_JsonResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BuyPackageWifi_JsonResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ChangePasswordWifi_Json">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="params" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ChangePasswordWifi_JsonResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ChangePasswordWifi_JsonResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="CheckOnlineWifi_JsonSoapIn">
+    <wsdl:part name="parameters" element="tns:CheckOnlineWifi_Json" />
+  </wsdl:message>
+  <wsdl:message name="CheckOnlineWifi_JsonSoapOut">
+    <wsdl:part name="parameters" element="tns:CheckOnlineWifi_JsonResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPasswordWifi_JsonSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPasswordWifi_Json" />
+  </wsdl:message>
+  <wsdl:message name="GetPasswordWifi_JsonSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPasswordWifi_JsonResponse" />
+  </wsdl:message>
+  <wsdl:message name="QueryPackageWifi_JsonSoapIn">
+    <wsdl:part name="parameters" element="tns:QueryPackageWifi_Json" />
+  </wsdl:message>
+  <wsdl:message name="QueryPackageWifi_JsonSoapOut">
+    <wsdl:part name="parameters" element="tns:QueryPackageWifi_JsonResponse" />
+  </wsdl:message>
+  <wsdl:message name="CallWebServiceSoapIn">
+    <wsdl:part name="parameters" element="tns:CallWebService" />
+  </wsdl:message>
+  <wsdl:message name="CallWebServiceSoapOut">
+    <wsdl:part name="parameters" element="tns:CallWebServiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="SubmitSMSSoapIn">
+    <wsdl:part name="parameters" element="tns:SubmitSMS" />
+  </wsdl:message>
+  <wsdl:message name="SubmitSMSSoapOut">
+    <wsdl:part name="parameters" element="tns:SubmitSMSResponse" />
+  </wsdl:message>
+  <wsdl:message name="SelectLogSoapIn">
+    <wsdl:part name="parameters" element="tns:SelectLog" />
+  </wsdl:message>
+  <wsdl:message name="SelectLogSoapOut">
+    <wsdl:part name="parameters" element="tns:SelectLogResponse" />
+  </wsdl:message>
+  <wsdl:message name="RequestProductByIDSoapIn">
+    <wsdl:part name="parameters" element="tns:RequestProductByID" />
+  </wsdl:message>
+  <wsdl:message name="RequestProductByIDSoapOut">
+    <wsdl:part name="parameters" element="tns:RequestProductByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="HSPASoapIn">
+    <wsdl:part name="parameters" element="tns:HSPA" />
+  </wsdl:message>
+  <wsdl:message name="HSPASoapOut">
+    <wsdl:part name="parameters" element="tns:HSPAResponse" />
+  </wsdl:message>
+  <wsdl:message name="PrePSoapIn">
+    <wsdl:part name="parameters" element="tns:PreP" />
+  </wsdl:message>
+  <wsdl:message name="PrePSoapOut">
+    <wsdl:part name="parameters" element="tns:PrePResponse" />
+  </wsdl:message>
+  <wsdl:message name="PostPSoapIn">
+    <wsdl:part name="parameters" element="tns:PostP" />
+  </wsdl:message>
+  <wsdl:message name="PostPSoapOut">
+    <wsdl:part name="parameters" element="tns:PostPResponse" />
+  </wsdl:message>
+  <wsdl:message name="CheckNetwrokType_JsonSoapIn">
+    <wsdl:part name="parameters" element="tns:CheckNetwrokType_Json" />
+  </wsdl:message>
+  <wsdl:message name="CheckNetwrokType_JsonSoapOut">
+    <wsdl:part name="parameters" element="tns:CheckNetwrokType_JsonResponse" />
+  </wsdl:message>
+  <wsdl:message name="CheckBalancePostPaid_JsonSoapIn">
+    <wsdl:part name="parameters" element="tns:CheckBalancePostPaid_Json" />
+  </wsdl:message>
+  <wsdl:message name="CheckBalancePostPaid_JsonSoapOut">
+    <wsdl:part name="parameters" element="tns:CheckBalancePostPaid_JsonResponse" />
+  </wsdl:message>
+  <wsdl:message name="RefillCard_PostPaid_JsonSoapIn">
+    <wsdl:part name="parameters" element="tns:RefillCard_PostPaid_Json" />
+  </wsdl:message>
+  <wsdl:message name="RefillCard_PostPaid_JsonSoapOut">
+    <wsdl:part name="parameters" element="tns:RefillCard_PostPaid_JsonResponse" />
+  </wsdl:message>
+  <wsdl:message name="RefillCard_PSTN_JsonSoapIn">
+    <wsdl:part name="parameters" element="tns:RefillCard_PSTN_Json" />
+  </wsdl:message>
+  <wsdl:message name="RefillCard_PSTN_JsonSoapOut">
+    <wsdl:part name="parameters" element="tns:RefillCard_PSTN_JsonResponse" />
+  </wsdl:message>
+  <wsdl:message name="CheckPoint_JsonSoapIn">
+    <wsdl:part name="parameters" element="tns:CheckPoint_Json" />
+  </wsdl:message>
+  <wsdl:message name="CheckPoint_JsonSoapOut">
+    <wsdl:part name="parameters" element="tns:CheckPoint_JsonResponse" />
+  </wsdl:message>
+  <wsdl:message name="CheckBalancePrePaid_JsonSoapIn">
+    <wsdl:part name="parameters" element="tns:CheckBalancePrePaid_Json" />
+  </wsdl:message>
+  <wsdl:message name="CheckBalancePrePaid_JsonSoapOut">
+    <wsdl:part name="parameters" element="tns:CheckBalancePrePaid_JsonResponse" />
+  </wsdl:message>
+  <wsdl:message name="CheckDataServicePrePaid_JsonSoapIn">
+    <wsdl:part name="parameters" element="tns:CheckDataServicePrePaid_Json" />
+  </wsdl:message>
+  <wsdl:message name="CheckDataServicePrePaid_JsonSoapOut">
+    <wsdl:part name="parameters" element="tns:CheckDataServicePrePaid_JsonResponse" />
+  </wsdl:message>
+  <wsdl:message name="CheckPackageData_JsonSoapIn">
+    <wsdl:part name="parameters" element="tns:CheckPackageData_Json" />
+  </wsdl:message>
+  <wsdl:message name="CheckPackageData_JsonSoapOut">
+    <wsdl:part name="parameters" element="tns:CheckPackageData_JsonResponse" />
+  </wsdl:message>
+  <wsdl:message name="CheckPackageDataHSPA_JsonSoapIn">
+    <wsdl:part name="parameters" element="tns:CheckPackageDataHSPA_Json" />
+  </wsdl:message>
+  <wsdl:message name="CheckPackageDataHSPA_JsonSoapOut">
+    <wsdl:part name="parameters" element="tns:CheckPackageDataHSPA_JsonResponse" />
+  </wsdl:message>
+  <wsdl:message name="RefillCard_PrePaid_JsonSoapIn">
+    <wsdl:part name="parameters" element="tns:RefillCard_PrePaid_Json" />
+  </wsdl:message>
+  <wsdl:message name="RefillCard_PrePaid_JsonSoapOut">
+    <wsdl:part name="parameters" element="tns:RefillCard_PrePaid_JsonResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCustomerInfo_JsonSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCustomerInfo_Json" />
+  </wsdl:message>
+  <wsdl:message name="GetCustomerInfo_JsonSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCustomerInfo_JsonResponse" />
+  </wsdl:message>
+  <wsdl:message name="SubmitSMS_cmd_JsonSoapIn">
+    <wsdl:part name="parameters" element="tns:SubmitSMS_cmd_Json" />
+  </wsdl:message>
+  <wsdl:message name="SubmitSMS_cmd_JsonSoapOut">
+    <wsdl:part name="parameters" element="tns:SubmitSMS_cmd_JsonResponse" />
+  </wsdl:message>
+  <wsdl:message name="SetPackagePrePaid_JsonSoapIn">
+    <wsdl:part name="parameters" element="tns:SetPackagePrePaid_Json" />
+  </wsdl:message>
+  <wsdl:message name="SetPackagePrePaid_JsonSoapOut">
+    <wsdl:part name="parameters" element="tns:SetPackagePrePaid_JsonResponse" />
+  </wsdl:message>
+  <wsdl:message name="Register_JsonSoapIn">
+    <wsdl:part name="parameters" element="tns:Register_Json" />
+  </wsdl:message>
+  <wsdl:message name="Register_JsonSoapOut">
+    <wsdl:part name="parameters" element="tns:Register_JsonResponse" />
+  </wsdl:message>
+  <wsdl:message name="CheckUserAndPassword_JsonSoapIn">
+    <wsdl:part name="parameters" element="tns:CheckUserAndPassword_Json" />
+  </wsdl:message>
+  <wsdl:message name="CheckUserAndPassword_JsonSoapOut">
+    <wsdl:part name="parameters" element="tns:CheckUserAndPassword_JsonResponse" />
+  </wsdl:message>
+  <wsdl:message name="ChangePasswordUserName_JsonSoapIn">
+    <wsdl:part name="parameters" element="tns:ChangePasswordUserName_Json" />
+  </wsdl:message>
+  <wsdl:message name="ChangePasswordUserName_JsonSoapOut">
+    <wsdl:part name="parameters" element="tns:ChangePasswordUserName_JsonResponse" />
+  </wsdl:message>
+  <wsdl:message name="RequestProductByID_JsonSoapIn">
+    <wsdl:part name="parameters" element="tns:RequestProductByID_Json" />
+  </wsdl:message>
+  <wsdl:message name="RequestProductByID_JsonSoapOut">
+    <wsdl:part name="parameters" element="tns:RequestProductByID_JsonResponse" />
+  </wsdl:message>
+  <wsdl:message name="SelectLog_jsonSoapIn">
+    <wsdl:part name="parameters" element="tns:SelectLog_json" />
+  </wsdl:message>
+  <wsdl:message name="SelectLog_jsonSoapOut">
+    <wsdl:part name="parameters" element="tns:SelectLog_jsonResponse" />
+  </wsdl:message>
+  <wsdl:message name="TranferBalanceOCS_JsonSoapIn">
+    <wsdl:part name="parameters" element="tns:TranferBalanceOCS_Json" />
+  </wsdl:message>
+  <wsdl:message name="TranferBalanceOCS_JsonSoapOut">
+    <wsdl:part name="parameters" element="tns:TranferBalanceOCS_JsonResponse" />
+  </wsdl:message>
+  <wsdl:message name="CheckBalancePSTN_JsonSoapIn">
+    <wsdl:part name="parameters" element="tns:CheckBalancePSTN_Json" />
+  </wsdl:message>
+  <wsdl:message name="CheckBalancePSTN_JsonSoapOut">
+    <wsdl:part name="parameters" element="tns:CheckBalancePSTN_JsonResponse" />
+  </wsdl:message>
+  <wsdl:message name="AuthenMBill_JsonSoapIn">
+    <wsdl:part name="parameters" element="tns:AuthenMBill_Json" />
+  </wsdl:message>
+  <wsdl:message name="AuthenMBill_JsonSoapOut">
+    <wsdl:part name="parameters" element="tns:AuthenMBill_JsonResponse" />
+  </wsdl:message>
+  <wsdl:message name="RequestListNumberSoapIn">
+    <wsdl:part name="parameters" element="tns:RequestListNumber" />
+  </wsdl:message>
+  <wsdl:message name="RequestListNumberSoapOut">
+    <wsdl:part name="parameters" element="tns:RequestListNumberResponse" />
+  </wsdl:message>
+  <wsdl:message name="RegisterMBill_JsonSoapIn">
+    <wsdl:part name="parameters" element="tns:RegisterMBill_Json" />
+  </wsdl:message>
+  <wsdl:message name="RegisterMBill_JsonSoapOut">
+    <wsdl:part name="parameters" element="tns:RegisterMBill_JsonResponse" />
+  </wsdl:message>
+  <wsdl:message name="RegisterWifi_JsonSoapIn">
+    <wsdl:part name="parameters" element="tns:RegisterWifi_Json" />
+  </wsdl:message>
+  <wsdl:message name="RegisterWifi_JsonSoapOut">
+    <wsdl:part name="parameters" element="tns:RegisterWifi_JsonResponse" />
+  </wsdl:message>
+  <wsdl:message name="BuyPackageWifi_JsonSoapIn">
+    <wsdl:part name="parameters" element="tns:BuyPackageWifi_Json" />
+  </wsdl:message>
+  <wsdl:message name="BuyPackageWifi_JsonSoapOut">
+    <wsdl:part name="parameters" element="tns:BuyPackageWifi_JsonResponse" />
+  </wsdl:message>
+  <wsdl:message name="ChangePasswordWifi_JsonSoapIn">
+    <wsdl:part name="parameters" element="tns:ChangePasswordWifi_Json" />
+  </wsdl:message>
+  <wsdl:message name="ChangePasswordWifi_JsonSoapOut">
+    <wsdl:part name="parameters" element="tns:ChangePasswordWifi_JsonResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ServiceSoap">
+    <wsdl:operation name="CheckOnlineWifi_Json">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Check Online Sub Wifi AAA</wsdl:documentation>
+      <wsdl:input message="tns:CheckOnlineWifi_JsonSoapIn" />
+      <wsdl:output message="tns:CheckOnlineWifi_JsonSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPasswordWifi_Json">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Password Wifi AAA</wsdl:documentation>
+      <wsdl:input message="tns:GetPasswordWifi_JsonSoapIn" />
+      <wsdl:output message="tns:GetPasswordWifi_JsonSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryPackageWifi_Json">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Query Package Wifi AAA</wsdl:documentation>
+      <wsdl:input message="tns:QueryPackageWifi_JsonSoapIn" />
+      <wsdl:output message="tns:QueryPackageWifi_JsonSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CallWebService">
+      <wsdl:input message="tns:CallWebServiceSoapIn" />
+      <wsdl:output message="tns:CallWebServiceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SubmitSMS">
+      <wsdl:input message="tns:SubmitSMSSoapIn" />
+      <wsdl:output message="tns:SubmitSMSSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectLog">
+      <wsdl:input message="tns:SelectLogSoapIn" />
+      <wsdl:output message="tns:SelectLogSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RequestProductByID">
+      <wsdl:input message="tns:RequestProductByIDSoapIn" />
+      <wsdl:output message="tns:RequestProductByIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="HSPA">
+      <wsdl:input message="tns:HSPASoapIn" />
+      <wsdl:output message="tns:HSPASoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PreP">
+      <wsdl:input message="tns:PrePSoapIn" />
+      <wsdl:output message="tns:PrePSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PostP">
+      <wsdl:input message="tns:PostPSoapIn" />
+      <wsdl:output message="tns:PostPSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckNetwrokType_Json">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Request Check Network Type</wsdl:documentation>
+      <wsdl:input message="tns:CheckNetwrokType_JsonSoapIn" />
+      <wsdl:output message="tns:CheckNetwrokType_JsonSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckBalancePostPaid_Json">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Request Check Balance Post-Paid</wsdl:documentation>
+      <wsdl:input message="tns:CheckBalancePostPaid_JsonSoapIn" />
+      <wsdl:output message="tns:CheckBalancePostPaid_JsonSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RefillCard_PostPaid_Json">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Request Refill Post-paid</wsdl:documentation>
+      <wsdl:input message="tns:RefillCard_PostPaid_JsonSoapIn" />
+      <wsdl:output message="tns:RefillCard_PostPaid_JsonSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RefillCard_PSTN_Json">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Request Refill PSTN</wsdl:documentation>
+      <wsdl:input message="tns:RefillCard_PSTN_JsonSoapIn" />
+      <wsdl:output message="tns:RefillCard_PSTN_JsonSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckPoint_Json">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Request Check Point</wsdl:documentation>
+      <wsdl:input message="tns:CheckPoint_JsonSoapIn" />
+      <wsdl:output message="tns:CheckPoint_JsonSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckBalancePrePaid_Json">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Request Check Balance Prepaid</wsdl:documentation>
+      <wsdl:input message="tns:CheckBalancePrePaid_JsonSoapIn" />
+      <wsdl:output message="tns:CheckBalancePrePaid_JsonSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckDataServicePrePaid_Json">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Request Check Data Service PrePaid</wsdl:documentation>
+      <wsdl:input message="tns:CheckDataServicePrePaid_JsonSoapIn" />
+      <wsdl:output message="tns:CheckDataServicePrePaid_JsonSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckPackageData_Json">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Request Check Data Service Post-Paid</wsdl:documentation>
+      <wsdl:input message="tns:CheckPackageData_JsonSoapIn" />
+      <wsdl:output message="tns:CheckPackageData_JsonSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckPackageDataHSPA_Json">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Request Check Data Service HSPA</wsdl:documentation>
+      <wsdl:input message="tns:CheckPackageDataHSPA_JsonSoapIn" />
+      <wsdl:output message="tns:CheckPackageDataHSPA_JsonSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RefillCard_PrePaid_Json">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Refill Card PrePaid and HSPA</wsdl:documentation>
+      <wsdl:input message="tns:RefillCard_PrePaid_JsonSoapIn" />
+      <wsdl:output message="tns:RefillCard_PrePaid_JsonSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerInfo_Json">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Name Customer</wsdl:documentation>
+      <wsdl:input message="tns:GetCustomerInfo_JsonSoapIn" />
+      <wsdl:output message="tns:GetCustomerInfo_JsonSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SubmitSMS_cmd_Json">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Function SMS</wsdl:documentation>
+      <wsdl:input message="tns:SubmitSMS_cmd_JsonSoapIn" />
+      <wsdl:output message="tns:SubmitSMS_cmd_JsonSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetPackagePrePaid_Json">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Sub Package Pre-Paid and HSPA</wsdl:documentation>
+      <wsdl:input message="tns:SetPackagePrePaid_JsonSoapIn" />
+      <wsdl:output message="tns:SetPackagePrePaid_JsonSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Register_Json">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Register M-Service</wsdl:documentation>
+      <wsdl:input message="tns:Register_JsonSoapIn" />
+      <wsdl:output message="tns:Register_JsonSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckUserAndPassword_Json">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Authen M-Service</wsdl:documentation>
+      <wsdl:input message="tns:CheckUserAndPassword_JsonSoapIn" />
+      <wsdl:output message="tns:CheckUserAndPassword_JsonSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ChangePasswordUserName_Json">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Change Password</wsdl:documentation>
+      <wsdl:input message="tns:ChangePasswordUserName_JsonSoapIn" />
+      <wsdl:output message="tns:ChangePasswordUserName_JsonSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RequestProductByID_Json">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Request Product Package</wsdl:documentation>
+      <wsdl:input message="tns:RequestProductByID_JsonSoapIn" />
+      <wsdl:output message="tns:RequestProductByID_JsonSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectLog_json">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Select History</wsdl:documentation>
+      <wsdl:input message="tns:SelectLog_jsonSoapIn" />
+      <wsdl:output message="tns:SelectLog_jsonSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TranferBalanceOCS_Json">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Tranfer</wsdl:documentation>
+      <wsdl:input message="tns:TranferBalanceOCS_JsonSoapIn" />
+      <wsdl:output message="tns:TranferBalanceOCS_JsonSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckBalancePSTN_Json">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Check Balance PSTN</wsdl:documentation>
+      <wsdl:input message="tns:CheckBalancePSTN_JsonSoapIn" />
+      <wsdl:output message="tns:CheckBalancePSTN_JsonSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AuthenMBill_Json">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Check Sign in  M-Bill</wsdl:documentation>
+      <wsdl:input message="tns:AuthenMBill_JsonSoapIn" />
+      <wsdl:output message="tns:AuthenMBill_JsonSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RequestListNumber">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Request List Number</wsdl:documentation>
+      <wsdl:input message="tns:RequestListNumberSoapIn" />
+      <wsdl:output message="tns:RequestListNumberSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RegisterMBill_Json">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Register M-Service</wsdl:documentation>
+      <wsdl:input message="tns:RegisterMBill_JsonSoapIn" />
+      <wsdl:output message="tns:RegisterMBill_JsonSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RegisterWifi_Json">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Register Wifi AAA</wsdl:documentation>
+      <wsdl:input message="tns:RegisterWifi_JsonSoapIn" />
+      <wsdl:output message="tns:RegisterWifi_JsonSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BuyPackageWifi_Json">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Buy Package Wifi AAA</wsdl:documentation>
+      <wsdl:input message="tns:BuyPackageWifi_JsonSoapIn" />
+      <wsdl:output message="tns:BuyPackageWifi_JsonSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ChangePasswordWifi_Json">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Change Password Wifi AAA</wsdl:documentation>
+      <wsdl:input message="tns:ChangePasswordWifi_JsonSoapIn" />
+      <wsdl:output message="tns:ChangePasswordWifi_JsonSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ServiceSoap" type="tns:ServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CheckOnlineWifi_Json">
+      <soap:operation soapAction="http://www.laotel.com/CheckOnlineWifi_Json" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPasswordWifi_Json">
+      <soap:operation soapAction="http://www.laotel.com/GetPasswordWifi_Json" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryPackageWifi_Json">
+      <soap:operation soapAction="http://www.laotel.com/QueryPackageWifi_Json" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CallWebService">
+      <soap:operation soapAction="http://www.laotel.com/CallWebService" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SubmitSMS">
+      <soap:operation soapAction="http://www.laotel.com/SubmitSMS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectLog">
+      <soap:operation soapAction="http://www.laotel.com/SelectLog" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RequestProductByID">
+      <soap:operation soapAction="http://www.laotel.com/RequestProductByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HSPA">
+      <soap:operation soapAction="http://www.laotel.com/HSPA" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PreP">
+      <soap:operation soapAction="http://www.laotel.com/PreP" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PostP">
+      <soap:operation soapAction="http://www.laotel.com/PostP" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckNetwrokType_Json">
+      <soap:operation soapAction="http://www.laotel.com/CheckNetwrokType_Json" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckBalancePostPaid_Json">
+      <soap:operation soapAction="http://www.laotel.com/CheckBalancePostPaid_Json" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RefillCard_PostPaid_Json">
+      <soap:operation soapAction="http://www.laotel.com/RefillCard_PostPaid_Json" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RefillCard_PSTN_Json">
+      <soap:operation soapAction="http://www.laotel.com/RefillCard_PSTN_Json" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckPoint_Json">
+      <soap:operation soapAction="http://www.laotel.com/CheckPoint_Json" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckBalancePrePaid_Json">
+      <soap:operation soapAction="http://www.laotel.com/CheckBalancePrePaid_Json" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckDataServicePrePaid_Json">
+      <soap:operation soapAction="http://www.laotel.com/CheckDataServicePrePaid_Json" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckPackageData_Json">
+      <soap:operation soapAction="http://www.laotel.com/CheckPackageData_Json" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckPackageDataHSPA_Json">
+      <soap:operation soapAction="http://www.laotel.com/CheckPackageDataHSPA_Json" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RefillCard_PrePaid_Json">
+      <soap:operation soapAction="http://www.laotel.com/RefillCard_PrePaid_Json" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerInfo_Json">
+      <soap:operation soapAction="http://www.laotel.com/GetCustomerInfo_Json" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SubmitSMS_cmd_Json">
+      <soap:operation soapAction="http://www.laotel.com/SubmitSMS_cmd_Json" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetPackagePrePaid_Json">
+      <soap:operation soapAction="http://www.laotel.com/SetPackagePrePaid_Json" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Register_Json">
+      <soap:operation soapAction="http://www.laotel.com/Register_Json" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckUserAndPassword_Json">
+      <soap:operation soapAction="http://www.laotel.com/CheckUserAndPassword_Json" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChangePasswordUserName_Json">
+      <soap:operation soapAction="http://www.laotel.com/ChangePasswordUserName_Json" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RequestProductByID_Json">
+      <soap:operation soapAction="http://www.laotel.com/RequestProductByID_Json" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectLog_json">
+      <soap:operation soapAction="http://www.laotel.com/SelectLog_json" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TranferBalanceOCS_Json">
+      <soap:operation soapAction="http://www.laotel.com/TranferBalanceOCS_Json" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckBalancePSTN_Json">
+      <soap:operation soapAction="http://www.laotel.com/CheckBalancePSTN_Json" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AuthenMBill_Json">
+      <soap:operation soapAction="http://www.laotel.com/AuthenMBill_Json" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RequestListNumber">
+      <soap:operation soapAction="http://www.laotel.com/RequestListNumber" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RegisterMBill_Json">
+      <soap:operation soapAction="http://www.laotel.com/RegisterMBill_Json" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RegisterWifi_Json">
+      <soap:operation soapAction="http://www.laotel.com/RegisterWifi_Json" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuyPackageWifi_Json">
+      <soap:operation soapAction="http://www.laotel.com/BuyPackageWifi_Json" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChangePasswordWifi_Json">
+      <soap:operation soapAction="http://www.laotel.com/ChangePasswordWifi_Json" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServiceSoap12" type="tns:ServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CheckOnlineWifi_Json">
+      <soap12:operation soapAction="http://www.laotel.com/CheckOnlineWifi_Json" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPasswordWifi_Json">
+      <soap12:operation soapAction="http://www.laotel.com/GetPasswordWifi_Json" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryPackageWifi_Json">
+      <soap12:operation soapAction="http://www.laotel.com/QueryPackageWifi_Json" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CallWebService">
+      <soap12:operation soapAction="http://www.laotel.com/CallWebService" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SubmitSMS">
+      <soap12:operation soapAction="http://www.laotel.com/SubmitSMS" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectLog">
+      <soap12:operation soapAction="http://www.laotel.com/SelectLog" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RequestProductByID">
+      <soap12:operation soapAction="http://www.laotel.com/RequestProductByID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HSPA">
+      <soap12:operation soapAction="http://www.laotel.com/HSPA" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PreP">
+      <soap12:operation soapAction="http://www.laotel.com/PreP" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PostP">
+      <soap12:operation soapAction="http://www.laotel.com/PostP" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckNetwrokType_Json">
+      <soap12:operation soapAction="http://www.laotel.com/CheckNetwrokType_Json" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckBalancePostPaid_Json">
+      <soap12:operation soapAction="http://www.laotel.com/CheckBalancePostPaid_Json" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RefillCard_PostPaid_Json">
+      <soap12:operation soapAction="http://www.laotel.com/RefillCard_PostPaid_Json" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RefillCard_PSTN_Json">
+      <soap12:operation soapAction="http://www.laotel.com/RefillCard_PSTN_Json" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckPoint_Json">
+      <soap12:operation soapAction="http://www.laotel.com/CheckPoint_Json" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckBalancePrePaid_Json">
+      <soap12:operation soapAction="http://www.laotel.com/CheckBalancePrePaid_Json" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckDataServicePrePaid_Json">
+      <soap12:operation soapAction="http://www.laotel.com/CheckDataServicePrePaid_Json" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckPackageData_Json">
+      <soap12:operation soapAction="http://www.laotel.com/CheckPackageData_Json" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckPackageDataHSPA_Json">
+      <soap12:operation soapAction="http://www.laotel.com/CheckPackageDataHSPA_Json" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RefillCard_PrePaid_Json">
+      <soap12:operation soapAction="http://www.laotel.com/RefillCard_PrePaid_Json" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerInfo_Json">
+      <soap12:operation soapAction="http://www.laotel.com/GetCustomerInfo_Json" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SubmitSMS_cmd_Json">
+      <soap12:operation soapAction="http://www.laotel.com/SubmitSMS_cmd_Json" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetPackagePrePaid_Json">
+      <soap12:operation soapAction="http://www.laotel.com/SetPackagePrePaid_Json" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Register_Json">
+      <soap12:operation soapAction="http://www.laotel.com/Register_Json" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckUserAndPassword_Json">
+      <soap12:operation soapAction="http://www.laotel.com/CheckUserAndPassword_Json" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChangePasswordUserName_Json">
+      <soap12:operation soapAction="http://www.laotel.com/ChangePasswordUserName_Json" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RequestProductByID_Json">
+      <soap12:operation soapAction="http://www.laotel.com/RequestProductByID_Json" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectLog_json">
+      <soap12:operation soapAction="http://www.laotel.com/SelectLog_json" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TranferBalanceOCS_Json">
+      <soap12:operation soapAction="http://www.laotel.com/TranferBalanceOCS_Json" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckBalancePSTN_Json">
+      <soap12:operation soapAction="http://www.laotel.com/CheckBalancePSTN_Json" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AuthenMBill_Json">
+      <soap12:operation soapAction="http://www.laotel.com/AuthenMBill_Json" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RequestListNumber">
+      <soap12:operation soapAction="http://www.laotel.com/RequestListNumber" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RegisterMBill_Json">
+      <soap12:operation soapAction="http://www.laotel.com/RegisterMBill_Json" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RegisterWifi_Json">
+      <soap12:operation soapAction="http://www.laotel.com/RegisterWifi_Json" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuyPackageWifi_Json">
+      <soap12:operation soapAction="http://www.laotel.com/BuyPackageWifi_Json" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChangePasswordWifi_Json">
+      <soap12:operation soapAction="http://www.laotel.com/ChangePasswordWifi_Json" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service">
+    <wsdl:port name="ServiceSoap" binding="tns:ServiceSoap">
+      <soap:address location="https://192.9.200.75:567/Service.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ServiceSoap12" binding="tns:ServiceSoap12">
+      <soap12:address location="https://192.9.200.75:567/Service.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
