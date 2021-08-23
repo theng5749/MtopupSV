@@ -163,7 +163,6 @@ D:\LTC\api\MtopupSV\ConfirmTopup\bin\System.Web.WebPages.Razor.xml
 D:\LTC\api\MtopupSV\ConfirmTopup\bin\Newtonsoft.Json.xml
 D:\LTC\api\MtopupSV\ConfirmTopup\bin\Antlr3.Runtime.pdb
 D:\LTC\api\MtopupSV\ConfirmTopup\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-D:\LTC\api\MtopupSV\ConfirmTopup\obj\Debug\ConfirmTopup.csprojAssemblyReference.cache
 D:\LTC\api\MtopupSV\ConfirmTopup\obj\Debug\ConfirmTopup.csproj.CoreCompileInputs.cache
 D:\LTC\api\MtopupSV\ConfirmTopup\obj\Debug\ConfirmTopup.csproj.CopyComplete
 D:\LTC\api\MtopupSV\ConfirmTopup\obj\Debug\ConfirmTopup.dll

@@ -54,5 +54,29 @@ namespace ConfirmTopup.Models
             }
             return result;
         }
+
+        public static string OpenDBBanking(OracleConnection conn)
+        {
+            string strCon = "Data Source=(DESCRIPTION="
+             + "(ADDRESS=(PROTOCOL=TCP)(HOST=172.28.12.95)(PORT=1521))"
+             + "(CONNECT_DATA=(SERVICE_NAME=CCDB001)));"
+             + "User Id=banking;Password=bankingdb;";
+            string result = "";
+            try
+            {
+                if (conn.State == System.Data.ConnectionState.Open)
+                {
+                    conn.Close();
+                }
+                conn.ConnectionString = strCon;
+                conn.Open();
+                result = "Done";
+            }
+            catch (Exception ex)
+            {
+                result = "ERR: " + ex.Message.ToString();
+            }
+            return result;
+        }
     }
 }

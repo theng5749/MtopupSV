@@ -41,7 +41,7 @@ namespace ConfirmTopup.Controllers
             string tel = "";
             if (id != null)
             {
-                var getresult = ManageRefill.GetApproveInfo(id,type);
+                var getresult = ManageRefill.GetApproveInfo(id,type.ToUpper());
                 if(getresult.ResultCode == "200")
                 {
                     tel = getresult.Msisdn;
@@ -191,8 +191,8 @@ namespace ConfirmTopup.Controllers
                         //Checking all
                         if (CheckRefillProcess(model.Id))
                         {
-                            var getOldNew = ManageRefill.CheckRefillType(model.Msisdn);
-                            if (getOldNew)
+                            var getOldNew = CheckBankingUser(model.Msisdn);
+                            if (!getOldNew)
                             {
                                 _amount = 0;
                                 var resultRefill = ManageRefill.InsertRechargeNew(model.Msisdn, model.Balance);
@@ -409,6 +409,28 @@ namespace ConfirmTopup.Controllers
             }
             return result;
         }
+
+        private static bool CheckBankingUser (string msisdn)
+        {
+            OracleConnection conn = new OracleConnection();
+            OracleCommand cmd = new OracleCommand();
+            OracleDataReader dr;
+            bool result = false;
+            int _count = 0;
+            ConnectionString.OpenDBBanking(conn);
+            string sql = "select count(*) from tbl_topup where record_date  >= sysdate -30 and center_number = '"+msisdn.Trim()+"'";
+            cmd = new OracleCommand(sql, conn);
+            dr = cmd.ExecuteReader();
+            if (dr.Read())
+            {
+                _count = Convert.ToInt32(dr[0]);
+                if (_count > 0)
+                {
+                    result = true;
+                }
+            }
+            return result;
+        }
         //public async System.Threading.Tasks.Task<ActionResult> RenderFileAsync(string id)
         //{
         //    //using (var client = new HttpClient())
@@ -441,7 +463,7 @@ namespace ConfirmTopup.Controllers
 
         //    }
         //}
-   
+
         public async Task<ActionResult> RenderImage(string id)
         {
             // var path = $"http://172.28.12.35:2425/Files/{id}";
